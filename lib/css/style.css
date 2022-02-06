@@ -1,0 +1,2028 @@
+@font-face {
+    src: url("../font/B Badr Bold.ttf");
+    font-family: 'Inter';
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    direction: rtl;
+    overflow: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    margin-top: 4%;
+    margin-right: 23%;
+}
+table, th,td {
+    border: 1px solid white;
+    border-radius: 3px;
+    border-collapse: collapse ;
+    padding: 1%;
+}
+header nav {
+    background-color: #212182;
+    height: 45px;
+    width: 100%;
+}
+header nav ul {
+    position: relative;
+    display: flex;
+    line-height: 45px;
+    right: 0px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.form-whole-register {
+    position: relative;
+    top: 70px;
+}
+.alert-msg-green {
+    background-color: #aaff9c;
+    width: 19%;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 7px;
+    margin-right: 43%;
+    position: relative;
+    top: 70px;
+}
+.alert-msg-green p {
+    margin-right: 6px;
+}
+.alert-msg-red {
+    background-color: #e9afa3;
+    width: 17%;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 7px;
+    margin-right: 43%;
+    position: relative;
+    top: 70px;
+}
+.alert-msg-red p {
+    margin-right: 6px;
+}
+.alert-msg-red-pass {
+    background-color: #e9afa3;
+    width: 18%;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 7px;
+    margin-right: 43%;
+    position: relative;
+    top: 70px;
+}
+.alert-msg-red-pass p  {
+    margin-right: 6px;
+}
+.greeting {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: "B Titr";
+}
+.doctor {
+    position: relative;
+    top: 143px;
+    right: 25%;
+}
+.patient {
+    position: relative;
+    top: -50px;
+    right: 68%;
+}
+.doctor_btn_login {
+    background-color: blueviolet;
+    color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: -48px;
+    margin-top: 15px;
+    border: 1px solid blueviolet;
+}
+.doctor_btn_login:hover {
+    background-color: #212182;
+    cursor: pointer;
+}
+.doctor_btn_register {
+    background-color: blueviolet;
+    color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: -48px;
+    margin-top: 5px;
+    border: 1px solid blueviolet;
+}
+.doctor_btn_register:hover {
+    background-color: #212182;
+    cursor: pointer;
+}
+.patient_btn_login {
+    background-color: brown;
+    color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: -48px;
+    margin-top: 15px;
+    border: 1px solid brown;
+}
+.patient_btn_login:hover {
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.patient_btn_register {
+    background-color: brown;
+    color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: -48px;
+    margin-top: 5px;
+    border: 1px solid brown;
+}
+.patient_btn_register:hover {
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.title{
+    background-color: darkred;
+    width: 58%;
+    text-align: center;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 23%;
+    margin-top: 35px;
+    border-radius: 4px;
+}
+.form-registeration-dr {
+    margin-top: 0%;
+    width: 58%;
+    height: 400px;
+    margin-right: 23%;
+    background-color: #c6cabf;
+    box-shadow: 10px 10px 40px #c6cabf;
+}
+#name {
+    position: absolute;
+    right: 335px;
+    top: 95px;
+}
+.name {
+    position: absolute;
+    right: 430px;
+    top: 95px;
+    outline: none;
+    width: 20%;
+}
+#lastname {
+    position: absolute;
+    right: 335px;
+    top: 140px;
+}
+.lastname {
+    position: absolute;
+    right: 430px;
+    top: 140px;
+    outline: none;
+    width: 20%;
+}
+#fathername{
+    position: absolute;
+    top: 95px;
+    right: 730px;
+}
+.fathername {
+    position: absolute;
+    top: 95px;
+    right: 780px;
+    outline: none;
+    width: 20%;
+}
+#nation_codeRe {
+    position: absolute;
+    top: 140px;
+    right: 730px;
+}
+.meli_code {
+    position: absolute;
+    top: 140px;
+    outline: none;
+    right: 780px;
+    width: 20%;
+}
+#phonenumber {
+    position: absolute;
+    right: 335px;
+    top:188px;
+}
+.phonenumber {
+    position: absolute;
+    outline: none;
+    right: 430px;
+    width: 20%;
+    top: 185px;
+}
+#medical_number {
+    position: absolute;
+    right: 730px;
+    top: 188px;
+    font-size: 14px;
+}
+.medical_number {
+    position: absolute;
+    width: 15%;
+    right: 848px;
+    top: 185px;
+    outline: none;
+}
+#email {
+    position: absolute;
+    right: 335px;
+    top: 230px;
+}
+.email {
+    position: absolute;
+    width: 20%;
+    top: 230px;
+    right: 430px;
+}
+#pass_dr {
+    position: absolute;
+    right: 730px;
+    top: 228px;
+}
+.pass_dr {
+    position: absolute;
+    right: 795px;
+    top: 228px;
+    width: 19%;
+    outline: none;
+}
+#pass_repeat {
+    position: absolute;
+    right: 335px;
+    top: 270px;
+}
+.pass_repeat {
+    position: absolute;
+    right: 442px;
+    width: 19%;
+    top: 270px;
+}
+.sex_type {
+    position: absolute;
+    right: 60%;
+    top: 269px;
+}
+h4 {
+    position: absolute;
+    top: 62%;
+    right: 53%;
+}
+#ax_label {
+    position: absolute;
+    right: 335px;
+    top: 318px;
+}
+.file_sign {
+    position: absolute;
+    right: 510px;
+    top: 315px;
+}
+.btn_dr_reg {
+    width: 75%;
+    background-color: green;
+    border-radius: 10px;
+    height: 40px;
+    color: #c6cabf;
+    font-size: 26px;
+    margin-right: 11%;
+    margin-top:26px;
+}
+.btn_dr_reg:hover{
+    background-color: forestgreen;
+    cursor: pointer;
+}
+.qlogin {
+    margin: 15px 295px;
+}
+.qlogin  a {
+    text-decoration: none;
+}
+.form-login-doctors {
+    position: relative;
+    top: 57px;
+    right: 30%;
+    width: 41%;
+    height: 297px;
+    background-color: white;
+    box-shadow: 6px 2px 20px #000000;
+}
+#email_dr_login {
+    position: absolute;
+    right: 5%;
+    top: 19%;
+}
+
+.email_dr_login {
+    position: absolute;
+    top: 16%;
+    right: 25%;
+    width: 50%;
+    height: 20px;
+    outline: none;
+}
+#pass_dr_login {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.pass_dr_login {
+    position: absolute;
+    top: 34%;
+    width: 50%;
+    height: 20px;
+    right: 25%;
+    outline: none;
+}
+.btn_dr_log {
+    position: absolute;
+    top: 68%;
+    right: 31%;
+    width: 35%;
+    height: 35px;
+    background-color: green;
+    color: #fbfff2;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.btn_dr_log:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+.background-login {
+    background-image: url("../img/baclgroundlogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.qregister {
+    position: absolute;
+    top: 88%;
+    right: 33%;
+}
+.qregister  a {
+    text-decoration: none;
+}
+.logo-dr {
+    position: relative;
+    margin-right: 44%;
+    top: 57px;
+}
+.title_p {
+    position: relative;
+    top: 110px;
+    margin-right: 16%;
+    width: 956px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: darkred;
+    color: #fbfff2;
+}
+.form-registeration-patinet {
+    position: relative;
+    top: 110px;
+    right: 16%;
+    width: 70%;
+    height: 360px;
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+}
+#name_patinet_register {
+    position: absolute;
+    right: 40px;
+    top: 15%;
+}
+.name_patinet_register {
+    position: absolute;
+    width: 30%;
+    right: 15%;
+    outline: none;
+    height: 20px;
+    top: 12%;
+}
+#lastname_patinet_register {
+    position: absolute;
+    top: 89px;
+    right: 4%;
+}
+.lastname_patinet_register {
+    position: absolute;
+    right: 15%;
+    width: 30%;
+    height: 20px;
+    top: 80px;
+    outline: none;
+}
+#fathername_patinet_register {
+    position: absolute;
+    right: 4%;
+    outline: none;
+    top: 128px;
+}
+.fathername_patinet_register {
+    position: absolute;
+    right: 15%;
+    outline: none;
+    height: 20px;
+    width: 30%;
+    top: 121px;
+}
+#number_patinet_register {
+    position: absolute;
+    right: 49%;
+    top: 17%;
+}
+.number_patinet_register {
+    position: absolute;
+    right: 60%;
+    top: 14%;
+    width: 30%;
+    height: 20px;
+    outline: none;
+}
+#nation_codeـpatinet_register {
+    position: absolute;
+    right: 49%;
+    top: 30%;
+}
+.nation_codeـpatinet_register {
+    position: absolute;
+    right: 60%;
+    top: 28%;
+    width: 30%;
+    height: 20px;
+    outline: none;
+}
+.jensiat {
+    position: absolute;
+    right: 15%;
+    top: 180px;
+}
+.sex_type_patinet {
+    position: absolute;
+    right: 22%;
+    top: 177px;
+}
+.vaziat_taahol {
+    position: absolute;
+    top: 177px;
+}
+.married_patinet {
+    position: absolute;
+    top: 175px;
+    right: 64%;
+}
+#insurance_type {
+    position: absolute;
+    right: 4%;
+    top: 228px;
+}
+#insurance {
+    position: absolute;
+    right: 25%;
+    outline: none;
+    width: 15%;
+    top: 227px;
+}
+.btn_patinet_reg {
+    position: absolute;
+    top: 274px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 35px;
+    font-size: 22px;
+    right: 30%;
+}
+#remeber_dr {
+    position: absolute;
+    top: 54%;
+    right: 45px;
+}
+.remeber_dr {
+    position: absolute;
+    top: 54%;
+    right: 20px;
+}
+.btn_patinet_reg:hover{
+    cursor: pointer;
+    background-color: #235ae2;
+}
+.qlogin_patient {
+    position: absolute;
+    top: 323px;
+    right: 41%;
+}
+.qlogin_patient a {
+    text-decoration: none;
+}
+.form-login-patinet {
+    position: relative;
+    top: 125px;
+    right: 34em;
+}
+.login-background {
+    background-image: url("../img/loginbackgroundp.jpeg");
+    background-size: cover;
+}
+.form-login-patinet {
+    box-shadow: 1px 7px 25px #000000;
+    position: relative;
+    right: 33%;
+    top: 191px;
+    width: 32%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+#username_patinet_login {
+    position: absolute;
+    right: 5%;
+    top: 16%;
+}
+.username_patinet_login {
+    position: absolute;
+    width: 54%;
+    right: 31%;
+    top: 16%;
+    outline: none;
+}
+#password_patinet_login {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+.password_patinet_login {
+    position: absolute;
+    right: 31%;
+    top: 34%;
+    width: 54%;
+    outline: none;
+}
+.form-login-patinet #\#remember_p{
+    position: absolute;
+    right: 8%;
+    top: 54%;
+}
+.form-login-patinet .check_p_class {
+    position: absolute;
+    right: 2%;
+    top: 54%;
+}
+.btn_patinet_log {
+    position: absolute;
+    background-color: brown;
+    top: 68%;
+    color: white;
+    right: 35%;
+    width: 30%;
+    height: 30px;
+    border-radius: 7px;
+}
+.btn_patinet_log:hover {
+    background-color: #902523;
+    cursor: pointer;
+}
+.qregister_patinet {
+    position: absolute;
+    top: 87%;
+    right: 30%;
+}
+.qregister_patinet a {
+    text-decoration: none;
+}
+.head {
+    background-color: #00aa00;
+    width: 100%;
+    height: 100px;
+}
+.imglogo {
+    margin-right: 10px;
+}
+.head>.greetingdr {
+    position: absolute;
+    left: 7%;
+    margin-top: -96px;
+    line-height: 100px;
+}
+.profilelogo {
+    position: absolute;
+    left: 244px;
+    top: 28px;
+}
+.head i {
+    position: absolute;
+    left: 78px;
+    top: 39px;
+}
+.guide {
+   margin: 49px 423px;
+    font-family: Inter;
+    font-size: 23px;
+}
+.fatherimg {
+    position: relative;
+    top: 25px;
+    right: -7%;
+}
+.fatherimg .drugdr{
+    position: absolute;
+    width: 135px;
+    top: 52%;
+    right: 24%;
+}
+.fatherimg .test {
+    position: absolute;
+    width: 135px;
+    top: 52%;
+    right: 44%;
+}
+.fatherimg .ct {
+    position: absolute;
+    width: 135px;
+    top: 52%;
+    right: 65%;
+}
+.fatherimg .prescription {
+    position: absolute;
+    width: 135px;
+    top: 52%;
+    right: 85%;
+}
+.fathertxt .adrugdr a {
+    position: absolute;
+    font-family: Inter;
+    top: 60%;
+    right: 228px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.fathertxt .adrugdr a:hover {
+    color: #323030;
+}
+.fathertxt .atest a {
+    position: absolute;
+    font-family: Inter;
+    top: 60%;
+    right: 517px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.fathertxt .atest a:hover {
+    color: #323030;
+}
+.fathertxt .act a {
+    position: absolute;
+    font-family: Inter;
+    top: 60%;
+    right: 33em;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.fathertxt .act a:hover {
+    color: #323030;
+}
+.fathertxt .afree a {
+    position: absolute;
+    font-family: Inter;
+    top: 60%;
+    right: 81%;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.fathertxt .afree a:hover {
+    color: #323030;
+}
+.sec {
+    margin-right: -5%;
+}
+.login_error_msg {
+    background-color: #ff7472;
+    height: 25px;
+}
+.login_error_msg {
+    line-height: 25px;
+    text-align: center;
+}
+.login_error_msg_patinet {
+    position: absolute;
+    margin-top: -235px;
+    background-color: #ff7472;
+    width: 100%;
+    height: 25px;
+}
+.login_error_msg_patinet p {
+    text-align: center;
+}
+.submenu {
+    position: relative;
+    box-shadow: 4px 0px 14px #d4d2cb;
+    width: 10%;
+    height: 100px;
+    margin-right: 84%;
+    margin-top: -25px;
+    background-color: white;
+    visibility: hidden;
+}
+.submenu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "B Lotus";
+}
+.submenu .edition_in_profile {
+    position: absolute;
+    margin-right: 13%;
+    margin-top: 12px;
+}
+.submenu .history_of_prescriptions {
+    position: absolute;
+    top: 45px;
+    right: 13%;
+    font-family: "B Lotus";
+    font-size: 17px;
+    font-weight: bold;
+}
+.submenu .exit_dr {
+    position: absolute;
+    margin-right: 13%;
+    margin-top: 75px;
+}
+.submenu .edition_in_profile:hover {
+    color: #800002;
+}
+.submenu .history_of_prescriptions:hover{
+    color: #800002;
+}
+.submenu .exit_dr:hover {
+    color: #800002;
+}
+.arrow:hover .submenu {
+    visibility: visible;
+}
+.show_name_Dr {
+    position: absolute;
+    margin-right: 83%;
+    top: 39px;
+}
+.background-header {
+    background-color: #0a53be;
+    width: 100%;
+    height: 42px;
+}
+.background-header p {
+    line-height: 42px;
+    margin-right: 15px;
+    font-family: "IranNastaliq";
+    font-size: 23px;
+    color: #f6f6f0;
+}
+.img-patinet-logo {
+    position: absolute;
+    left: 14%;
+    top: 8px;
+}
+header i{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.tajziha {
+    position: relative;
+    padding: 12% 10%;
+    right: 4%;
+}
+.see_drug_index {
+    position: absolute;
+    top: 8%;
+}
+.see_drug_index a {
+    text-decoration: none;
+    color: black;
+    font-family: "B Lotus";
+    font-size: 23px;
+}
+.see_drug_index a:hover{
+    color: #43433d;
+}
+.see_test_index {
+    position: absolute;
+    top: 8%;
+    right: 25%;
+}
+.see_test_index a {
+    text-decoration: none;
+    color: black;
+    font-family: "B Lotus";
+    font-size: 23px;
+}
+.see_test_index a:hover {
+    color: #43433d;
+}
+.see_ct_index {
+    position: absolute;
+    top: 8%;
+    right: 43%;
+}
+.see_ct_index a {
+    text-decoration: none;
+    color: black;
+    font-family: "B Lotus";
+    font-size: 23px
+}
+.see_ct_index a:hover {
+    color: #43433d;
+}
+.see_free_index {
+    position: absolute;
+    top: 8%;
+    right: 63%;
+}
+.see_free_index a {
+    text-decoration: none;
+    color: black;
+    font-family: "B Lotus";
+    font-size: 23px
+}
+.see_free_index a:hover {
+    color: #43433d;
+}
+.sub-patinet {
+    box-shadow: 4px 0px 14px #4f5050;
+    width: 10%;
+    height: 78px;
+    margin-right: 88%;
+    visibility: hidden;
+}
+.sub-patinet a {
+    text-decoration: none;
+    color: black;
+}
+.sub-patinet a:active {
+    color: black;
+}
+.edition_in_profile_patinet {
+    position: absolute;
+    right: 89%;
+    top: 51px;
+}
+.exit_patinet {
+    position: absolute;
+    right: 89%;
+    top: 15%;
+}
+.edition_in_profile_patinet:hover {
+    color: #6a1a21;
+    cursor: pointer;
+}
+.exit_patinet:hover {
+    cursor: pointer;
+    color: #6a1a21;
+}
+.arrow-panel-patinet:hover .sub-patinet {
+    visibility: visible;
+}
+.patinet_name {
+    position: absolute;
+    left: -191px;
+    top: 15px;
+    width: 27%;
+}
+.form-whole-drug {
+    box-shadow: 4px 0px 14px #75b070;
+    height: 440px;
+    width: 37%;
+    background-color: #99b093;
+    margin-top: 38px;
+    margin-right: 30%;
+}
+#lbl_nationCode_patinet {
+    position: absolute;
+    right: 31%;
+    top: 9%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.txt_nationCode_patinet{
+    position: absolute;
+    right: 35%;
+    width: 22%;
+    top: 9%;
+    outline: none;
+}
+#name_drug {
+    position: absolute;
+    right: 31%;
+    top: 15%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.txt_name_drug {
+    position: absolute;
+    right: 35%;
+    width: 22%;
+    top: 15%;
+    outline: none;
+}
+#count_drug {
+    position: absolute;
+    right: 31%;
+    top: 21%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.txt_count_drug {
+    position: absolute;
+    right: 35%;
+    width: 22%;
+    top: 21%;
+    outline: none;
+}
+#consumption_drug_date {
+    position: absolute;
+    right: 31%;
+    top: 27%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.txt_consumption_drug_date {
+    position: absolute;
+    right: 37%;
+    width: 20%;
+    top: 27%;
+    outline: none;
+}
+#consumption_m{
+    position: absolute;
+    right: 31%;
+    top: 33%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.txt_consumption_m {
+    position: absolute;
+    top: 33%;
+    right: 38%;
+    width: 19%;
+    outline: none;
+}
+.explain_drug {
+    position: absolute;
+    right: 31%;
+    top: 45%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+#explain {
+    position: absolute;
+    outline: none;
+    top: 41%;
+    right: 38%;
+}
+.btn_check_nation {
+    position: absolute;
+    width: 10%;
+    height: 45px;
+    background-color: #00740d;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-family: Inter;
+    top: 63%;
+    right: 42%;
+}
+.btn_check_nation:hover {
+    transition: 2.5ms ease-in-out;
+    background-color: #003f0a;
+    cursor: pointer;
+}
+.form-whole-drug img {
+    position: absolute;
+    top: 62%;
+    right: 58%;
+}
+.show_msg_success_in_drug {
+    position: absolute;
+    color: #004812;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 44%;
+    margin-top: -22px;
+    font-weight: bold;
+}
+.show_msg_error_in_drug {
+    position: absolute;
+    color: #6a1a21;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 40%;
+    margin-top: -26px;
+    font-weight: bold;
+}
+.back_drug {
+    position: absolute;
+    text-decoration: none;
+    color: #fcff0c;
+    left: 30px;
+    top: 11px;
+}
+.back_drug:hover {
+    transition: 2.5ms ease-in-out;
+    color: #bcbf0b;
+}
+.form-whole-test{
+    box-shadow: 4px 0px 14px #75b070;
+    height: 205px;
+    width: 37%;
+    background-color: #99b093;
+    margin-top: 100px;
+    margin-right: 30%;
+}
+#nation_code_in_test {
+    position: absolute;
+    right: 32%;
+    top: 18%;
+    font-family: Inter;
+    font-size: 20px;
+}
+#title_in_test {
+    position: absolute;
+    right: 32%;
+    top: 24%;
+    font-family: Inter;
+    font-size: 20px;
+}
+.nation_code_in_test {
+    position: absolute;
+    right: 40%;
+    width: 22%;
+    top: 18%;
+    outline: none;
+}
+.title_in_test {
+    position: absolute;
+    right: 40%;
+    width: 22%;
+    top: 24%;
+    outline: none;
+}
+.btn_test {
+    position: absolute;
+    width: 15%;
+    height: 40px;
+    color: white;
+    font-family: "B Lotus";
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #6a1a21;
+    top: 39%;
+    right: 43%;
+}
+.btn_test:hover {
+    background-color: #6d001d;
+    cursor: pointer;
+}
+.form-whole-test img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 35%;
+    right: 31%;
+}
+.show_msg_success_in_test {
+    position: absolute;
+    color: #004812;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 38%;
+    margin-top: -28px;
+    font-weight: bold;
+}
+.show_msg_error_in_test {
+    position: absolute;
+    color: #6a1a21;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 43%;
+    margin-top: -28px;
+    font-weight: bold;
+}
+.back_test {
+    position: absolute;
+    text-decoration: none;
+    left: 33px;
+    top: 17px;
+    color: #dadc00;
+}
+.back_test:hover {
+    color: #7b7d00;
+}
+.form-whole-ct {
+    box-shadow: 4px 0px 14px #75b070;
+    height: 247px;
+    width: 30%;
+    background-color: #99b093;
+    margin-top: 100px;
+    margin-right: 35%;
+}
+#code_nation_in_ct {
+    position: absolute;
+    font-size: 20px;
+    font-family: "B Lotus";
+    font-weight: bold;
+    right: 36%;
+    top: 19%;
+}
+.code_nation_in_ct {
+    position: absolute;
+    top: 19%;
+    width: 22%;
+    right: 41%;
+    outline: none;
+}
+#title_ct{
+    position: absolute;
+    font-size: 20px;
+    font-family: "B Lotus";
+    font-weight: bold;
+    right: 36%;
+    top: 26%;
+    font-weight: bold;
+}
+.title_Ct {
+    position: absolute;
+    right: 43%;
+    width: 20%;
+    top: 26%;
+    outline: none;
+}
+.btn_ct {
+    position: absolute;
+    right: 45%;
+    top: 48%;
+    width: 19%;
+    height: 35px;
+    background-color: #6a1a21;
+    border-radius: 5px;
+    color: white;
+    font-family: "B Lotus";
+    font-size: 22px;
+    border: none;
+}
+
+.btn_ct:hover{
+    position: absolute;
+    background-color: #6e302f;
+    cursor: pointer;
+}
+.form-whole-ct img {
+    width: 100px;
+    height: 85px;
+    margin-top: 23%;
+    margin-right: 3%;
+}
+.back_ct {
+    position: absolute;
+    left: 33px;
+    text-decoration: none;
+    margin-top: -78px;
+}
+.back_ct:hover{
+    color: #90970a;
+}
+.show_msg_success_in_ct {
+    position: absolute;
+    color: #004812;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 47%;
+    margin-top: -28px;
+    font-weight: bold;
+}
+.show_msg_error_in_ct {
+    position: absolute;
+    color: #a00008;
+    font-family: Inter;
+    font-size: 17px;
+    margin-right: 44%;
+    margin-top: -28px;
+    font-weight: bold;
+}
+.border-free {
+    position: relative;
+    right: 21%;
+    top: 35px;
+}
+.free_in_bottom_border {
+    border-bottom: 1px solid #000000;
+    width: 735px;
+    margin-top: -450px;
+    margin-right: 23%;
+}
+.form-whole-free {
+    box-shadow: 4px 0px 14px #a9b1a9;
+    height: 550px;
+    width: 50%;
+    background-color: #e2e2e2;
+    margin-top: 60px;
+    margin-right: 27%;
+}
+#govahi {
+    margin-right: 4%;
+    margin-top: 9%;
+}
+.name_in_free {
+    position: absolute;
+    top: 11%;
+    right: 28%;
+}
+.menumber_in_free {
+    position: absolute;
+    top: 16%;
+    right: 28%;
+}
+#lbl_nationCode_free {
+    position: absolute;
+    left: 42%;
+    top: 11%;
+}
+.txt_nationCode_free {
+    position: absolute;
+    left: 29%;
+    top: 11%;
+    outline: none;
+}
+#date {
+    position: absolute;
+    left: 43%;
+    top: 16%;
+}
+.date{
+    position: absolute;
+    left: 29%;
+    top: 16%;
+}
+.btn_free {
+    position: absolute;
+    right: 29%;
+    width: 11%;
+    height: 35px;
+    top: 88%;
+    border: none;
+    border-radius: 7px;
+    background-color: #6a1a21;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "B Lotus";
+}
+.btn_free:hover {
+    background-color: #570002;
+    cursor: pointer;
+}
+.form-whole-free img {
+    width: 100px;
+    margin-right: 80%;
+    margin-top: -45px;
+    height: 70px;
+}
+.show_msg_success_in_free {
+    position: absolute;
+    top: 20px;
+    right: 45%;
+    color: #005509;
+    font-weight: bold;
+    font-family: "B Lotus";
+    font-size: 26px;
+}
+.show_msg_error_in_free {
+    position: absolute;
+    top: 20px;
+    right: 45%;
+    color: #98000c;
+    font-weight: bold;
+    font-family: "B Lotus";
+    font-size: 26px;
+}
+.back_free {
+    position: absolute;
+    left: 33px;
+    top: 15px;
+    text-decoration: none;
+    color: black;
+}
+header .father_in_history .menu_in_history {
+    background-color: white;
+    margin-top: 1%;
+}
+.menu_in_history li a {
+    color: black;
+    margin-right: 13em;
+    font-family: "B Titr";
+    transition: 2.5ms ease-in-out;
+}
+.menu_in_history li a:hover{
+    color: #981500;
+}
+.history_of_drugs th {
+    background-color: #c7e06f;
+}
+.history_of_drugs ,th ,td {
+    border: 1px solid #000000;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.history_of_drugs,td {
+    overflow-y: scroll;
+}
+.test_history th {
+    background-color: #c7e06f;
+}
+.test_history ,th ,td {
+    border: 1px solid #000000;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.test_history td {
+    overflow-y: scroll;
+}
+
+.history_ct th {
+    background-color: #c7e06f;
+}
+.history_ct ,th,td {
+    border: 1px solid #000000;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.msg_history_warning {
+    position: absolute;
+    color: #6a1a21;
+    background-color: #fbfd9e;
+    width: 28%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 0px 25px #e5e4b8;
+    right: 35%;
+    top: 53%;
+}
+.history_free th {
+    background-color: #c7e06f;
+}
+.history_free ,th,td {
+    border: 1px solid #000000;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.history_free td {
+    overflow-y: scroll;
+}
+.form-whole-update-in-ct {
+    position: relative;
+    width: 45%;
+    height: 175px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 3px 25px #9a9a9a;
+}
+#nation_code {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    font-size: 22px;
+    font-family: "B Lotus";
+}
+.nation_code {
+    position: absolute;
+    right: 29%;
+    top: 13px;
+    width: 36%;
+    outline: none;
+}
+#title_service {
+    position: absolute;
+    right: 4%;
+    top: 36%;
+    font-family: "B Lotus";
+    font-size: 22px;
+    outline: none;
+}
+.title_service {
+    position: absolute;
+    right: 29%;
+    top: 55px;
+    width: 36%;
+    outline: none;
+}
+.btn_update {
+    border: none;
+    position: absolute;
+    width: 26%;
+    height: 36px;
+    border-radius: 6px;
+    color: #005b0d;
+    background-color: #00ef20;
+    font-weight: bold;
+    right: 34%;
+    top: 65%;
+}
+.btn_update:hover {
+    background-color: #107500;
+    color: #c6cabf;
+    cursor: pointer;
+}
+.form-whole-drug-edit {
+   box-shadow:  4px 2px 32px #43433d;
+    border-radius: 3px;
+    width: 42%;
+    height: 24rem;
+    margin-top: 8%;
+    margin-right: 24rem;
+    background-color: #fbfff2;
+}
+#nation_code_drug_edit {
+    position: absolute;
+    right: 30%;
+    top: 20%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.nation_code_drug_edit {
+    position: absolute;
+    right: 38%;
+    top: 20%;
+    width: 21%;
+    outline: none;
+}
+#name_drug_for_edit {
+    position: absolute;
+    right: 30%;
+    top: 26%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.name_drug_for_edit {
+    position: absolute;
+    right: 38%;
+    top: 26%;
+    width: 21%;
+    outline: none;
+}
+#count_drug_edit {
+    position: absolute;
+    right: 30%;
+    top: 32%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.count_drug_edit {
+    position: absolute;
+    right: 38%;
+    top: 32%;
+    width: 21%;
+    outline: none;
+}
+#consumption_some {
+    position: absolute;
+    right: 30%;
+    top: 16rem;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.consumption_some {
+    position: absolute;
+    right: 38%;
+    top: 38%;
+    width: 21%;
+    outline: none;
+}
+#consumption_time {
+    position: absolute;
+    right: 30%;
+    top: 44%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.consumption_time {
+    position: absolute;
+    right: 38%;
+    top: 44%;
+    width: 21%;
+    outline: none;
+}
+#explain_edit {
+    position: absolute;
+    right: 30%;
+    top: 22rem;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+#explain_edition {
+    position: absolute;
+    right: 38%;
+    top: 50%;
+    width: 21%;
+    outline: none;
+}
+.btn_update_drug {
+    position: absolute;
+    right: 40%;
+    width: 18%;
+    height: 40px;
+    background-color: #07e500;
+    color: #074700;
+    font-weight: bold;
+    font-family: "B Lotus";
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    top: 66%;
+}
+.btn_update_drug:hover {
+    cursor: pointer;
+    transition:1.5ms ease-in-out;
+    background-color: #098f00;
+    color: #fbfff2;
+}
+.form-whole-update-in-test{
+    position: relative;
+    width: 45%;
+    height: 175px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    box-shadow: 2px 3px 25px #9a9a9a;
+}
+#nation_codeT {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    font-size: 22px;
+    font-family: "B Lotus";
+}
+.nation_codeT {
+    position: absolute;
+    right: 29%;
+    top: 13px;
+    width: 36%;
+    outline: none;
+}
+#title_serviceT {
+    position: absolute;
+    right: 4%;
+    top: 36%;
+    font-family: "B Lotus";
+    font-size: 22px;
+    outline: none;
+}
+.title_serviceT {
+    position: absolute;
+    right: 29%;
+    top: 55px;
+    width: 36%;
+    outline: none;
+}
+.btn_updateT {
+    border: none;
+    position: absolute;
+    width: 26%;
+    height: 36px;
+    border-radius: 6px;
+    color: #005b0d;
+    background-color: #00ef20;
+    font-weight: bold;
+    right: 34%;
+    top: 65%;
+}
+.btn_updateT:hover {
+    background-color: #107500;
+    color: #c6cabf;
+    cursor: pointer;
+}
+.tbl_see_drug {
+    width: 70%;
+    margin-top: -220px;
+    margin-right: 13%;
+}
+.tbl_see_drug td img {
+    width: 45%;
+    margin-right: 24%;
+}
+.tbl_see_Test {
+    width: 70%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: -13em;
+}
+.tbl_see_Test td img {
+    width: 45%;
+    margin-right: 24%;
+}
+.tbl_see_ct {
+    width: 70%;
+    margin-top: -220px;
+    margin-right: 13%;
+}
+.tbl_see_ct td img {
+    width: 45%;
+    margin-right: 24%;
+}
+.tbl_see_free {
+    width: 70%;
+    margin-top: -200px;
+    margin-right: 13%;
+}
+.email_lbl_for_value {
+    position: absolute;
+    font-size: 20px;
+    font-family: "B Lotus";
+    top: 56%;
+    right: 32%;
+}
+.email_dr_drug_value {
+    position: absolute;
+    top: 56%;
+    right: 38%;
+    width: 18%;
+}
+.email_lbl_for_value_test {
+    position: absolute;
+    top: 30%;
+    right: 32%;
+    font-family: "B Lotus";
+    font-size: 20px;
+    font-weight: bold;
+}
+.email_dr_test_value {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    width: 22%;
+}
+.email_lbl_for_value_ct {
+    position: absolute;
+    top: 33%;
+    right: 36%;
+    font-family: "B Lotus";
+    font-size: 20px;
+    font-weight: bold;
+}
+.email_dr_ct_value {
+    position: absolute;
+    top: 33%;
+    right: 41%;
+    width: 22%;
+}
+.email_dr_free_value {
+    position: absolute;
+    top: 94%;
+    right: 43%;
+    width: 18%;
+}
+.form-admin {
+    box-shadow: 4px 6px 39px darkgrey;
+    border-radius: 4px;
+    width: 24%;
+    height: 196px;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+}
+#username_admin {
+    position: absolute;
+    right: 39%;
+    top: 9%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.username_admin {
+    position: absolute;
+    top: 13%;
+    outline: none;
+    right: 39%;
+    width: 20%;
+}
+#password_admin{
+    position: absolute;
+    top: 18%;
+    right: 39%;
+    font-family: "B Lotus";
+    font-size: 20px;
+}
+.password_admin {
+    position: absolute;
+    top: 21%;
+    outline: none;
+    right: 39%;
+    width: 20%;
+}
+.btn_admin {
+    position: absolute;
+    top: 29%;
+    right: 555px;
+    width: 18%;
+    height: 34px;
+    border: none;
+    background-color: #e10900;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "B Lotus";
+}
+.btn_admin:hover {
+    cursor: pointer;
+    background-color:#a40800;
+}
+.main-panel {
+    position: absolute;
+    background-color: #88867e;
+    width: 12%;
+    margin-top: 4%;
+    height: 38em;
+}
+.main-panel a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "B Lotus";
+    font-size: 21px;
+    padding-right: 10px;
+    display: block;
+    padding-top: 35px;
+}
+.title_manage {
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-family: "B Titr";
+}
+.btn_exit {
+    position: absolute;
+    left: 5%;
+    margin-top: 15px;
+    background-color: #ea0001;
+    width: 5%;
+    height: 28px;
+    border: none;
+}
+.btn_exit a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.btn_exit:hover {
+    cursor: pointer;
+}
+.login_error_msg1 {
+    position: absolute;
+    right: 35em;
+    top: 9px;
+    color: #780001;
+}
+.login_error_msg2{
+    position: absolute;
+    right: 33em;
+    top: 9px;
+    color: #780001;
+}
+
+.dr_title_admin {
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    font-family: "B Titr";
+    font-size: 27px;
+}
+.tbl_admin1 {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+.add_title {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    font-size: 20px;
+}
+#name_menu {
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    font-family: "B Lotus";
+    font-size: 22px;
+}
+.name_menu {
+    position: absolute;
+    top: 25%;
+    right: 24%;
+    outline: none;
+}
+.btn_menu {
+    position: absolute;
+    top: 25%;
+    border: none;
+    width: 6%;
+    height: 23px;
+    right: 36%;
+}
+.title_list_menu {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    font-size: 20px;
+    font-family: "B Titr";
+}
+.listmenu {
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 18%;
+}
+.listmenu th {
+    background-color: #126820;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+}
+.listmenu td {
+    background-color: #24cc3f;
+}
+.btn_menu:hover{
+    cursor: pointer;
+}
+.success_msg {
+    position: absolute;
+    background-color: #28f647;
+    color: #2b542c;
+    top: 34%;
+    right: 45%;
+    width: 19%;
+    height: 25px;
+}
+.success_msg p {
+    line-height: 25px;
+    text-align: center;
+}
+.error_msg {
+    position: absolute;
+    top: 28%;
+    right: 43%;
+    background-color: #f6685b;
+    width: 16%;
+    height: 45px;
+    color: #6a1a21;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form-whole-addslider {
+    position: relative;
+    top: 11em;
+    right: 6em;
+
+}
+.lbl_ax {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+.file_upload {
+    position: absolute;
+    top: 25%;
+    right: 46%;
+}
+.btn_upload {
+    position: absolute;
+    top: 5em;
+    right: 36%;
+    width: 18%;
+    border: none;
+    height: 45px;
+    background-color: #0a53be;
+    color: #fbfff2;
+    border-radius: 5px;
+}
+.btn_upload:hover {
+    cursor: pointer;
+    background-color: #00AA88;
+    font-weight: bold;
+}
+.title_list_slider {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    font-size: 20px;
+    font-family: "B Titr";
+}
+.listSlider{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 18%;
+}
+.listSlider th {
+    background-color: #212182;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+}
+.listSlider {
+    background-color: #9bc0f6;
+}
+.error_msg1 {
+    position: absolute;
+    top: 9%;
+    right: 43%;
+    background-color: #f6685b;
+    width: 22%;
+    height: 45px;
+    color: #6a1a21;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
+.success_msg1{
+    position: absolute;
+    background-color: #28f647;
+    color: #2b542c;
+    top: 9%;
+    right: 42%;
+    width: 19%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
